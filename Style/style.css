@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
 }
 .navbar{
     border-bottom: 1px solid black;
@@ -37,15 +39,95 @@
     text-decoration: none;
     color: 474747;
 }
-.btn{
-    height: 44px;
-    width: 170px;
-    background-color: #469165;
-    color: #FFFFFF;
+
+.banner-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-flex;          /* aligns icon & text */
+  align-items: center;           /* vertical center */
+  gap: 8px;                      /* space between icon & text */
+
+  background-color: #469165;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;                /* better than 100% */
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: none;
+
+  white-space: nowrap;           /* keeps text in one line */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a7670e;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Optional secondary button style */
+.secondary {
+  background-color: transparent;
+  color: #469165;
+  border: 2px solid #469165;
+}
+
+.secondary:hover {
+  background-color: #469165;
+  color: #ffffff;
+}
+
+.banner-content{
+    height: 645px;
+    background-image: url('../assets/hero-bg.png'); 
+    background-size: cover;   
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+
+}
+#banner-early-access{
     font-size: 16px;
     font-weight: 600;
     line-height: 100%;
-    padding: 12px 16px;
-    border-radius: 4px;
-    
+    color: #30B868;
+    padding: 8px 12px;
+    flex-grow: horizontal;
+    border-radius: 1000px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+}
+
+.banner-content h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84%;
+    color: #FFFFFF;
+}
+.banner-content p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 720px;
+}
+.banner-content .banner-buttons{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+  width: fit-content;
+  padding: 10px 20px;
+  white-space: nowrap;
+
 }
