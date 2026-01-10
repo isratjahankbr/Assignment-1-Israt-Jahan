@@ -54,7 +54,7 @@
   gap: 16px;
 }
 
-.btn {
+.btn, .btn-1, .btn-2 {
   display: inline-flex;          /* aligns icon & text */
   align-items: center;           /* vertical center */
   gap: 8px;                      /* space between icon & text */
@@ -71,8 +71,13 @@
   white-space: nowrap;           /* keeps text in one line */
   cursor: pointer;
 }
+.btn-2{
+    background-color: transparent;
+    border: 1px solid #FFFFFF ;
+}
 
-.btn:hover {
+
+.btn:hover,.btn-1:hover,.btn-2:hover {
   background-color: #a7670e;
 }
 
