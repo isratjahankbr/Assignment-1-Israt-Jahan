@@ -5,6 +5,13 @@
     font-family: 'Inter', sans-serif;
     
 }
+
+.font-inter{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
 .navbar{
     border-bottom: 1px solid black;
     width:100%;
@@ -16,8 +23,8 @@
     flex-grow: horizontal;
     gap: 32px;
     padding: 16px 120px;
-
 }
+
 #one{
     color: #FFFFFF;
 }
@@ -31,13 +38,15 @@
     list-style-type: none;
     gap: 32px;
     align-items: center;
+    text-decoration: none;
+
 }
 .navbar-middle a{
     font-size: 16px;
     font-weight: 500;
 
     text-decoration: none;
-    color: 474747;
+    color: #000000;
 }
 
 .banner-buttons {
@@ -226,12 +235,12 @@
 }
 
 #Brain .brain-img{
-    width: 600px;
-    height: auto;
+    width: 550px;
+   
     
 }
 #Brain .brain-content{
-    max-width: 700px;
+    max-width: 680px;
     margin-left: 60px;
 }
 #Brain .brain-content .brain-section-msg{
@@ -304,7 +313,7 @@
 #early-access{
     width:100%;
     max-width: 1536px;
-    padding: 2px 110px 110px 110px;
+    padding: 2px 110px 100px 110px;
     margin: 0px auto;
     text-align: center;
     align-items: center;
@@ -361,6 +370,7 @@
 .footer{
     width:100%;
     max-width: 1536px;
+    height: 340px;
     margin: 0px auto;
     padding: 40px 120px;
     background-color: #001931;
